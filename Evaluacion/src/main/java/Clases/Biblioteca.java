@@ -20,26 +20,44 @@ public class Biblioteca {
         this.autor = autor;
     }
 
-    public  int ingresar() {
-        Scanner leaTeclado = new Scanner(System.in);
-
-        System.out.println("Ingrese nombre del libro: ");
-        this.nombreLibro = leaTeclado.nextLine();
-
-        System.out.println("Ingrese codigo del libro: ");
-        this.codigo = leaTeclado.nextLine();
-
-        System.out.println("Ingrese el numero de pagina: ");
-        this.numeroDePagina= leaTeclado.nextInt();
-
-        System.out.println("Ingrese numero de ejemplares: ");
-        this.numeroDeEjemplares= leaTeclado.nextInt();
-
-        System.out.println("Ingrese el nombre del autor: ");
-        this.autor = leaTeclado.nextLine();
-
-        return 0;
-
-
+    public String getNombreLibro() {
+        return nombreLibro;
     }
+
+    public void setNombreLibro(String nombreLibro) {
+        this.nombreLibro = nombreLibro;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public int getNumeroDePagina() {
+        return numeroDePagina;
+    }
+
+    public void setNumeroDePagina(int numeroDePagina) {
+        this.numeroDePagina = numeroDePagina;
+    }
+
+    public int getNumeroDeEjemplares() {
+        return numeroDeEjemplares;
+    }
+
+    public void setNumeroDeEjemplares(int numeroDeEjemplares) {
+        this.numeroDeEjemplares = numeroDeEjemplares;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+}
 }

@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Empleado empleado= new Empleado();
+        /*Empleado empleado= new Empleado();
         Scanner entradaPorTeclado= new Scanner(System.in);
 
         empleado.setSalario(3500000);
@@ -78,12 +78,18 @@ public class Main {
             }else if (observador==4){
                 System.out.println("Salir");
             }else{
-                System.out.println("opcion invalida");
+                System.out.println("opcion invalida");*/
             }
 
         }
 
+        // crear un objeto para escribir por teclado
+        Scanner entradaPorTeclado=new Scanner(System.in);
+                
+        //crear un objeto de tipo libro
+        Libro libro= new Libro();
 
-
-    }
-}
+        //agregar una cantidad de libros
+        System.out.println("Digite el numero de ejemplares: ");
+        libro.setNumeroEjemplares(entradaTeclado.nextInt());
+        System.out.println(libro.getNumeroEjemplares());
